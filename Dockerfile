@@ -1,6 +1,5 @@
-
 FROM phusion/baseimage:latest
-MAINTAINER phusion "info@phusion.nl"
+MAINTAINER Danish Abdullah "dev@danishabdullah.com"
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y
 
