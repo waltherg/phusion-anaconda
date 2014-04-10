@@ -14,6 +14,8 @@ RUN bash Anaconda.sh -b
 RUN rm -rf Anaconda.sh
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN source ~/.profile && DEBIAN_FRONTEND=noninteractive pip install -U ipython
+
 VOLUME ["/code"]
 
 EXPOSE 8888
