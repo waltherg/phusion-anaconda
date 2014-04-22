@@ -77,7 +77,7 @@ alias bashrc="nano ~/.bashrc"
 
 alias load_profile="source ~/.profile"
 
-alias ffs="sudo !!"
+alias ffs='eval "sudo $(fc -ln -1)"'
 
 alias update=" sudo apt-get update "
 
