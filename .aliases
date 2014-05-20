@@ -82,3 +82,5 @@ alias ffs='eval "sudo $(fc -ln -1)"'
 alias update=" sudo apt-get update "
 
 alias upgrade=" sudo apt-get upgrade "
+
+alias rm="trash-put"
