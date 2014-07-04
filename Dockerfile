@@ -1,7 +1,7 @@
 FROM phusion/baseimage:latest
 MAINTAINER Danish Abdullah "dev@danishabdullah.com"
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y && DEBIAN_FRONTEND=noninteractive  apt-get install -y aria2 && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y && DEBIAN_FRONTEND=noninteractive  apt-get install -y aria2 trash-cli && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD .profile /root/.profile
 ADD .prompt /root/.prompt
